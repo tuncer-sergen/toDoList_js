@@ -25,34 +25,44 @@ div2.style.background = 'white'
 div2.style.borderTop ='dodgerblue 5px solid'
 div2.style.marginTop = '20px'
 let div2bis1 = div2.querySelector('div')
-div2bis1.appendChild(document.createElement('label'))
+div2bis1.appendChild(document.createElement('div'))
+let div2bis1bis = div2bis1.querySelector('div')
+div2bis1bis.appendChild(document.createElement('label'))
 let label = document.querySelector('label')
 label.innerText = 'Ajouter une tâche :'
 label.style.fontSize = '30px'
 label.style.marginLeft ='20px'
-div2bis1.appendChild(document.createElement('input'))
+div2bis1bis.appendChild(document.createElement('input'))
 let input = document.querySelector('input')
 input.style.height = '30px'
 input.style.width = '300px'
 input.style.borderRadius = '10px'
 input.style.border = 'orange solid 3px'
 input.style.marginLeft = '20px'
+div2bis1bis.appendChild(document.createElement('button'))
+let buttonAjout = div2bis1bis.querySelector('button')
+buttonAjout.innerText = 'Ajout'
+buttonAjout.style.fontSize = '20px'
+buttonAjout.style.padding = '5px'
+buttonAjout.style.marginLeft = '10px'
+buttonAjout.style.borderRadius = '10px'
+buttonAjout.style.background = 'deepskyblue'
 div2bis1.appendChild(document.createElement('div'))
-let div2bis1bis = div2bis1.querySelector('div')
+let div2bis2bis = div2bis1.querySelectorAll('div')[1]
 for (let i = 0; i < 3;) {
-    div2bis1bis.appendChild(document.createElement('button'))
+    div2bis2bis.appendChild(document.createElement('button'))
     i++
 }
 div2bis1.style.display = 'flex'
 div2bis1.style.flexDirection = 'column'
-div2bis1bis.style.display = 'flex'
-div2bis1bis.style.justifyContent = 'flex-end'
-div2bis1bis.style.marginBottom = '10px'
-div2bis1bis.style.marginRight = '10px'
+div2bis2bis.style.display = 'flex'
+div2bis2bis.style.justifyContent = 'flex-end'
+div2bis2bis.style.marginBottom = '10px'
+div2bis2bis.style.marginRight = '10px'
 div2bis1.style.borderBottom = '1px black solid'
-let button1 = document.querySelector('button')
-let button2 = document.querySelectorAll('button')[1]
-let button3 = document.querySelectorAll('button')[2]
+let button1 = document.querySelectorAll('button')[1]
+let button2 = document.querySelectorAll('button')[2]
+let button3 = document.querySelectorAll('button')[3]
 button1.style.height = '40px'
 button1.innerText = 'A faire'
 button1.style.fontSize = '20px'
